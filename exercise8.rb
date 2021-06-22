@@ -39,14 +39,19 @@ else
 end
 =end
 
-def how_far(person_number, distance_in_meters, minutes)
-    puts "How far did person (person_number) run (distance_in_meters)?"
+def how_far(person_number)
+    puts "How far did person #{person_number} run in meters?"
     distance = gets.to_f
-    puts "How long (in minutes) did person 1 run take to run #{distance} metres?"
-    mins1 = gets.to_f
+    return distance
 end
 
-def how_long(mins, distance)
+def how_long(distance)
+    puts "How long (in minutes) did person 1 run take to run #{distance} metres?"
+    mins = gets.to_f
+    return mins
+
+end
+def get_speed(mins, distance)
     secs = mins * 60
     speed = distance/secs
 end
@@ -65,3 +70,16 @@ def how_fast(speed1, speed2, speed3, person_number)
         puts "Well done everyone!"
     end
 end
+d1 = how_far(1)
+t1 = how_long(d1)
+
+d2 = how_far(2)
+t2 = how_long(d2)
+
+d3 = how_far(3)
+t3 = how_long(d3)
+
+
+
+
+
