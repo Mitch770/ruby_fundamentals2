@@ -54,6 +54,7 @@ end
 def get_speed(mins, distance)
     secs = mins * 60
     speed = distance/secs
+    return speed
 end
 
 def how_fast(speed1, speed2, speed3, person_number)
